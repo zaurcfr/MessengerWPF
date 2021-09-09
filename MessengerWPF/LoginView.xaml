@@ -30,7 +30,8 @@
                 Width="250"
                 Height="50"
                 VerticalContentAlignment="Center"
-                materialDesign:TextFieldAssist.UnderlineBrush="Black">
+                materialDesign:TextFieldAssist.UnderlineBrush="Black"
+                Name="passwordBox">
             </PasswordBox>
 
             <Button
@@ -42,7 +43,8 @@
                 Content="Login"
                 Foreground="WhiteSmoke"
                 FontSize="20"
-                Command="{Binding LoginCommand}">
+                Command="{Binding LoginCommand}"
+                CommandParameter="{Binding ElementName=passwordBox}">
                 
             </Button>
 
@@ -51,12 +53,17 @@
         <StackPanel Grid.Row="1">
 
             <TextBlock
-                Height="50">
+                Height="50"
+                Text="Your key:"
+                TextAlignment="Center"
+                FontSize="36"
+                FontWeight="SemiBold">
                 
             </TextBlock>
             
             <TextBlock
-                Height="50">
+                Height="50"
+                Text="{Binding Key, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                 
             </TextBlock>
             

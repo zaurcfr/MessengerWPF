@@ -12,9 +12,12 @@
         <DataTemplate DataType="{x:Type viewModels:LoginViewModel}">
             <local:LoginView></local:LoginView>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:MainViewModel}">
+            <local:MainView></local:MainView>
+        </DataTemplate>
     </Window.Resources>
     <Window.DataContext>
-        <viewModels:MainViewModel></viewModels:MainViewModel>
+        <viewModels:MainWindowViewModel></viewModels:MainWindowViewModel>
     </Window.DataContext>
 
     <Grid>

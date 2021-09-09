@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MessengerWPF.ViewModel
+namespace MessengerWPF.Repository
 {
-    public class MainViewModel : BaseViewModel
+    public class ApplicationContext
     {
     }
 }

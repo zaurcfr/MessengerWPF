@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MessengerWPF.Model
+namespace Server
 {
     public class Chat
     {
